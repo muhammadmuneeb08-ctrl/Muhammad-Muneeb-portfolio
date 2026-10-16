@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Muneeb | AI Automation Engineer & Workflow Architect</title>
+  <meta name="description" content="Portfolio of Muhammad Muneeb, an AI Automation Engineer and BS AI student specializing in custom AI agents, n8n automations, and intelligent business workflows.">
+  <meta name="keywords" content="Muhammad Muneeb, AI Automation Engineer, n8n, AI Agents, Workflow Automation, Home Service AI, IDEOVERSITY, Claude, ChatGPT, Pinecone">
+  <meta name="author" content="Muhammad Muneeb">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Muhammad Muneeb | AI Automation Engineer">
+  <meta property="og:description" content="Building smart AI automations that eliminate manual work, optimize business workflows, and save valuable time.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Interactive Anti-Gravity Canvas Background -->
+  <canvas id="gravity-canvas"></canvas>
+
+  <!-- Ambient Glow Elements -->
+  <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-3" aria-hidden="true"></div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Muhammad Muneeb Portfolio Home">
+        <div class="logo-symbol">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">MM</span>
+          <span class="logo-dot">.ai</span>
+          <span class="logo-bracket">&gt;</span>
+        </div>
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span class="status-text">Available for Projects</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#audience" class="nav-link">Solutions</a></li>
+          <li><a href="#skills" class="nav-link">Tech Stack</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certification" class="nav-link">Certification</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-glow">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-trend-up"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-tag floating-badge">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>Next-Gen AI Automation Engineer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Automating Workflows.<br>
+            Eliminating <span class="gradient-text">Manual Work</span>.<br>
+            Scaling Businesses with <span class="neon-accent">Smart AI</span>.
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong>Muhammad Muneeb</strong> — a BS AI Student and AI Automation Engineer. 
+            I architect resilient end-to-end automations, intelligent AI agents, and frictionless workflow logic 
+            to help businesses recover lost hours and operate on autonomous autopilot.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-lg btn-glow">
+              <i class="fa-solid fa-microchip"></i>
+              <span>Explore AI Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-lg btn-glass">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>Schedule Free Audit</span>
+            </a>
+          </div>
+
+          <!-- Live Metrics Strip -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="metric-value">2+ <span class="metric-suffix">Mo</span></div>
+              <div class="metric-label">Focused AI Workflow Logic</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-value">6+ <span class="metric-suffix">Agents</span></div>
+              <div class="metric-label">Built & Deployed Automations</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-value">24/7</div>
+              <div class="metric-label">Autonomous Unattended Run</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Anti-Gravity Visual: Pipeline Command Card -->
+        <div class="hero-visual">
+          <div class="gravity-card-container">
+            <div class="pipeline-card anti-gravity-element" id="heroPipelineCard">
+              <div class="card-header-bar">
+                <div class="window-controls">
+                  <span class="control red"></span>
+                  <span class="control yellow"></span>
+                  <span class="control green"></span>
+                </div>
+                <div class="window-title">
+                  <i class="fa-solid fa-diagram-project"></i>
+                  <span>ai_automation_pipeline.orchestrator</span>
+                </div>
+                <div class="window-badge">ACTIVE</div>
+              </div>
+
+              <div class="pipeline-display">
+                <!-- Node 1: Trigger -->
+                <div class="pipeline-node node-trigger">
+                  <div class="node-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <div class="node-info">
+                    <span class="node-label">INCOMING TRIGGER</span>
+                    <strong class="node-name">Customer Inquiry / Webhook</strong>
+                  </div>
+                  <span class="node-status live"><i class="fa-solid fa-circle"></i> Live</span>
+                </div>
+
+                <div class="pipeline-connector">
+                  <div class="pulse-beam"></div>
+                </div>
+
+                <!-- Node 2: Reasoning Engine -->
+                <div class="pipeline-node node-ai">
+                  <div class="node-icon"><i class="fa-solid fa-brain"></i></div>
+                  <div class="node-info">
+                    <span class="node-label">LLM REASONING & EXTRACTION</span>
+                    <strong class="node-name">Claude & GPT-4o Logic Core</strong>
+                  </div>
+                  <span class="node-tag">Vector Match</span>
+                </div>
+
+                <div class="pipeline-connector">
+                  <div class="pulse-beam beam-2"></div>
+                </div>
+
+                <!-- Node 3: Orchestration -->
+                <div class="pipeline-node node-workflow">
+                  <div class="node-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+                  <div class="node-info">
+                    <span class="node-label">N8N ORCHESTRATION</span>
+                    <strong class="node-name">Conditional Routing & Retries</strong>
+                  </div>
+                  <span class="node-tag">0.18s Latency</span>
+                </div>
+
+                <div class="pipeline-connector">
+                  <div class="pulse-beam beam-3"></div>
+                </div>
+
+                <!-- Node 4: Action & Dispatch -->
+                <div class="pipeline-node node-dispatch">
+                  <div class="node-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                  <div class="node-info">
+                    <span class="node-label">INSTANT DISPATCH</span>
+                    <strong class="node-name">WhatsApp • CRM • Google Sheets</strong>
+                  </div>
+                  <span class="node-status done"><i class="fa-solid fa-check"></i> Executed</span>
+                </div>
+              </div>
+
+              <!-- Floating Tech Satellites -->
+              <div class="satellite-pill sat-1 float-slow">
+                <i class="fa-solid fa-shield-halved"></i> 100% Fail-Safe Logic
+              </div>
+              <div class="satellite-pill sat-2 float-reverse">
+                <i class="fa-solid fa-clock"></i> Saves 15+ Hrs/Week
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARGET AUDIENCE / VALUE PROPOSITION SECTION -->
+    <section class="section audience-section" id="audience">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-tag">
+            <i class="fa-solid fa-crosshairs"></i> Target Audience Focus
+          </div>
+          <h2 class="section-title">Engineered For <span class="gradient-text">High-Impact Growth</span></h2>
+          <p class="section-subtitle">
+            Tailored AI systems purpose-built for Small Business Owners and fast-moving Home Service Companies.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <!-- Home Service Card -->
+          <div class="audience-card anti-gravity-element">
+            <div class="card-glow"></div>
+            <div class="audience-icon-wrapper">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <h3>Home Service Businesses</h3>
+            <div class="niche-tags">
+              <span>Plumbers</span>
+              <span>Electricians</span>
+              <span>HVAC Specialists</span>
+              <span>Pest Control</span>
+            </div>
+            <p class="audience-desc">
+              Never lose a job to a missed call. We build instant AI responders that pick up inquiries, quote estimates, book calendar slots, and update your field crew 24/7.
+            </p>
+            <ul class="audience-benefits">
+              <li><i class="fa-solid fa-check-circle"></i> Instant 10-second response to customer emergencies</li>
+              <li><i class="fa-solid fa-check-circle"></i> Automated WhatsApp dispatching & job scheduling</li>
+              <li><i class="fa-solid fa-check-circle"></i> Zero dropped leads during peak field hours</li>
+            </ul>
+          </div>
+
+          <!-- Small Business Owners Card -->
+          <div class="audience-card anti-gravity-element">
+            <div class="card-glow"></div>
+            <div class="audience-icon-wrapper">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3>Small Business Owners</h3>
+            <div class="niche-tags">
+              <span>Agency Owners</span>
+              <span>E-Commerce</span>
+              <span>Local Service Providers</span>
+              <span>Consultants</span>
+            </div>
+            <p class="audience-desc">
+              Eliminate mundane, soul-crushing manual data entry, customer follow-ups, and repetitive social publishing so you can focus exclusively on revenue-generating strategy.
+            </p>
+            <ul class="audience-benefits">
+              <li><i class="fa-solid fa-check-circle"></i> Unified multi-channel lead onboarding into Google Sheets/CRM</li>
+              <li><i class="fa-solid fa-check-circle"></i> Automated cross-platform social media distribution</li>
+              <li><i class="fa-solid fa-check-circle"></i> Cut 15-20 hours of manual operational overhead weekly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SKILLS & TECH STACK SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-tag">
+            <i class="fa-solid fa-layer-group"></i> Capabilities & Arsenal
+          </div>
+          <h2 class="section-title">Core Skills & <span class="neon-accent">Tech Stack</span></h2>
+          <p class="section-subtitle">
+            A battle-tested foundation combining robust logic architecture with cutting-edge AI engines and APIs.
+          </p>
+        </div>
+
+        <div class="skills-layout-grid">
+          <!-- Column 1: Core Engineering Competencies -->
+          <div class="skills-block anti-gravity-element">
+            <div class="block-header">
+              <div class="block-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+              <div>
+                <h3>Workflow Logic & Architecture</h3>
+                <span class="block-subtitle">Engineering foundational stability</span>
+              </div>
+            </div>
+
+            <div class="competency-list">
+              <div class="competency-card">
+                <div class="comp-top">
+                  <span class="comp-title"><i class="fa-solid fa-network-wired"></i> Workflow Logic</span>
+                  <span class="comp-tag">Advanced</span>
+                </div>
+                <p>Designing complex conditional branch pathways, loop throttles, and asynchronous states for resilient automation pipelines.</p>
+              </div>
+
+              <div class="competency-card">
+                <div class="comp-top">
+                  <span class="comp-title"><i class="fa-solid fa-plug-circle-bolt"></i> API Integration</span>
+                  <span class="comp-tag">REST & Webhooks</span>
+                </div>
+                <p>Connecting disparate third-party services, handling bearer authentication, parsing JSON payloads, and managing rate limits seamlessly.</p>
+              </div>
+
+              <div class="competency-card">
+                <div class="comp-top">
+                  <span class="comp-title"><i class="fa-solid fa-terminal"></i> Prompt Engineering</span>
+                  <span class="comp-tag">Structured Output</span>
+                </div>
+                <p>Crafting role-conditioned prompts, zero-shot/few-shot chains, and strict JSON schemas to guarantee deterministic AI behavior.</p>
+              </div>
+
+              <div class="competency-card">
+                <div class="comp-top">
+                  <span class="comp-title"><i class="fa-solid fa-triangle-exclamation"></i> Error Handling</span>
+                  <span class="comp-tag">Fail-Safe Fallbacks</span>
+                </div>
+                <p>Engineering defensive retry loops, notification webhooks, graceful degradation, and dead-letter queue architectures.</p>
+              </div>
+
+              <div class="competency-card">
+                <div class="comp-top">
+                  <span class="comp-title"><i class="fa-solid fa-comments"></i> Client-Facing Communication</span>
+                  <span class="comp-tag">Requirement Scoping</span>
+                </div>
+                <p>Translating complex business bottlenecks into clean technical scopes, transparent progress updates, and intuitive handover demos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Tools & Platforms -->
+          <div class="skills-block anti-gravity-element">
+            <div class="block-header">
+              <div class="block-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div>
+                <h3>Tools & Cloud Platforms</h3>
+                <span class="block-subtitle">Production-grade AI automation stack</span>
+              </div>
+            </div>
+
+            <div class="tools-grid">
+              <!-- Tool 1: n8n -->
+              <div class="tool-card">
+                <div class="tool-logo-badge n8n-color">
+                  <i class="fa-solid fa-diagram-project"></i>
+                </div>
+                <div class="tool-meta">
+                  <h4>n8n</h4>
+                  <span class="tool-type">Workflow Orchestration</span>
+                </div>
+                <p>Self-hosted & cloud workflow logic, multi-node loops, webhook routing, and custom JavaScript transforms.</p>
+              </div>
+
+              <!-- Tool 2: ChatGPT (OpenAI) -->
+              <div class="tool-card">
+                <div class="tool-logo-badge openai-color">
+                  <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="tool-meta">
+                  <h4>ChatGPT / OpenAI</h4>
+                  <span class="tool-type">LLM & Function Calling</span>
+                </div>
+                <p>GPT-4o integrations, custom system personas, vision analysis, and real-time structured function dispatch.</p>
+              </div>
+
+              <!-- Tool 3: Claude (Anthropic) -->
+              <div class="tool-card">
+                <div class="tool-logo-badge claude-color">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="tool-meta">
+                  <h4>Claude (Anthropic)</h4>
+                  <span class="tool-type">Deep Context & Reasoning</span>
+                </div>
+                <p>Sonnet 3.5 prompt pipelines, nuanced conversational synthesis, customer intent detection, and document parsing.</p>
+              </div>
+
+              <!-- Tool 4: Pinecone -->
+              <div class="tool-card">
+                <div class="tool-logo-badge pinecone-color">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="tool-meta">
+                  <h4>Pinecone</h4>
+                  <span class="tool-type">Vector Search & RAG</span>
+                </div>
+                <p>Vector database index management for semantic search, business knowledge base retrieval, and long-term agent memory.</p>
+              </div>
+
+              <!-- Tool 5: WhatsApp Business -->
+              <div class="tool-card">
+                <div class="tool-logo-badge whatsapp-color">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="tool-meta">
+                  <h4>WhatsApp Business</h4>
+                  <span class="tool-type">Conversational Interface</span>
+                </div>
+                <p>Cloud API webhooks, automated customer booking flows, interactive buttons, and human agent handoff triggers.</p>
+              </div>
+
+              <!-- Tool 6: Gmail API -->
+              <div class="tool-card">
+                <div class="tool-logo-badge gmail-color">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="tool-meta">
+                  <h4>Gmail</h4>
+                  <span class="tool-type">Automated Dispatch</span>
+                </div>
+                <p>Automated lead alert notifications, dynamic HTML email templates, and AI-drafted customer follow-ups.</p>
+              </div>
+
+              <!-- Tool 7: Google Sheets -->
+              <div class="tool-card">
+                <div class="tool-logo-badge sheets-color">
+                  <i class="fa-solid fa-table"></i>
+                </div>
+                <div class="tool-meta">
+                  <h4>Google Sheets</h4>
+                  <span class="tool-type">Data Store & Reporting</span>
+                </div>
+                <p>Real-time two-way data sync, lead tracking logs, automated status updates, and reporting dashboards.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-tag">
+            <i class="fa-solid fa-rocket"></i> Production-Ready Systems
+          </div>
+          <h2 class="section-title">Featured <span class="gradient-text">AI Automations</span></h2>
+          <p class="section-subtitle">
+            A portfolio of 6 intelligent agents engineered to solve high-friction bottlenecks and operate unattended.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="filter-btn" data-filter="support">Customer Support & Reception</button>
+          <button class="filter-btn" data-filter="leadgen">Lead Gen & Onboarding</button>
+          <button class="filter-btn" data-filter="content">Publishing & Voice</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Real Time AI Receptionist -->
+          <article class="project-card anti-gravity-element" data-category="support">
+            <div class="project-card-inner">
+              <div class="project-badge"><i class="fa-solid fa-phone-volume"></i> Voice & Inbound</div>
+              <div class="project-number">01</div>
+              <h3 class="project-title">Real Time AI Receptionist</h3>
+              <p class="project-tagline">Instant 24/7 Inbound Call & Message Triage with Zero Wait Times</p>
+              <p class="project-description">
+                Engineered an intelligent automated receptionist that picks up calls and inquiries instantly, understands caller intent via advanced speech-to-text, answers FAQs accurately, and books calendar appointments on the fly.
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Sub-second conversational latency</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Calendar sync with Google / Calendly</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Automatic CRM record creation & SMS confirmation</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>n8n</span>
+                <span>Claude</span>
+                <span>OpenAI Whisper</span>
+                <span>Google Sheets</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-card-action" onclick="openProjectModal('receptionist')">
+                  <span>View Architecture</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AI WhatsApp Customer Support & Receptionist -->
+          <article class="project-card anti-gravity-element" data-category="support">
+            <div class="project-card-inner">
+              <div class="project-badge"><i class="fa-brands fa-whatsapp"></i> WhatsApp Omnichannel</div>
+              <div class="project-number">02</div>
+              <h3 class="project-title">AI WhatsApp Customer Support & Receptionist</h3>
+              <p class="project-tagline">Natural Language Business Assistant Operating on WhatsApp 24/7</p>
+              <p class="project-description">
+                A conversational WhatsApp bot that acts as the front desk for home services and retail. It handles customer inquiries, resolves order/service issues, collects quote details, and routes complex tickets to human staff.
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check"></i> WhatsApp Business Cloud API webhook handler</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Multi-turn memory retention per customer</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Human-handoff escalation mechanism</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>WhatsApp API</span>
+                <span>ChatGPT-4o</span>
+                <span>n8n</span>
+                <span>Pinecone</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-card-action" onclick="openProjectModal('whatsapp')">
+                  <span>View Architecture</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AI Powered Lead Capture & Onboarding Agent -->
+          <article class="project-card anti-gravity-element" data-category="leadgen">
+            <div class="project-card-inner">
+              <div class="project-badge"><i class="fa-solid fa-user-plus"></i> Lead Generation</div>
+              <div class="project-number">03</div>
+              <h3 class="project-title">AI Powered Lead Capture & Onboarding Agent</h3>
+              <p class="project-tagline">Autonomous Lead Qualification, Scoring, and Welcome Sequence</p>
+              <p class="project-description">
+                End-to-end inbound pipeline that ingests raw leads from web forms or ad hooks, validates company details, scores lead urgency using AI reasoning, logs records to Google Sheets, and triggers instant personalized onboarding emails.
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Instant lead qualification & enrichment</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Real-time alert to business owner via Gmail/SMS</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Automated onboarding email sequence dispatch</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>n8n</span>
+                <span>Claude 3.5</span>
+                <span>Gmail API</span>
+                <span>Google Sheets</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-card-action" onclick="openProjectModal('leadgen')">
+                  <span>View Architecture</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: AI Powered Content Publishing Agent -->
+          <article class="project-card anti-gravity-element" data-category="content">
+            <div class="project-card-inner">
+              <div class="project-badge"><i class="fa-solid fa-share-nodes"></i> Social Syndication</div>
+              <div class="project-number">04</div>
+              <h3 class="project-title">AI Powered Content Publishing Agent</h3>
+              <p class="project-tagline">Automating Facebook, Instagram & LinkedIn Multi-Platform Delivery</p>
+              <p class="project-description">
+                An autonomous publishing engine that takes a core content concept or blog summary, reformats and optimizes it for Facebook, Instagram, and LinkedIn specific tone/hashtags, and schedules publication with zero manual clicks.
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Platform-specific tone & hashtag adaptation</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Multi-channel API syndication pipeline</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Performance analytics tracking into spreadsheet</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>n8n</span>
+                <span>OpenAI / Claude</span>
+                <span>Meta Graph API</span>
+                <span>LinkedIn API</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-card-action" onclick="openProjectModal('content')">
+                  <span>View Architecture</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: AI Voice Agent -->
+          <article class="project-card anti-gravity-element" data-category="content">
+            <div class="project-card-inner">
+              <div class="project-badge"><i class="fa-solid fa-microphone-lines"></i> Voice AI</div>
+              <div class="project-number">05</div>
+              <h3 class="project-title">AI Voice Agent</h3>
+              <p class="project-tagline">Ultra-Low Latency Conversational Voice Agent for Inbound Services</p>
+              <p class="project-description">
+                A lifelike interactive voice AI designed to hold natural spoken phone conversations with home service clients. Capable of understanding complex inquiries, gathering job addresses, and dispatching work tickets to field techs.
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Human-like conversational cadence and voice timbre</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Real-time audio interruption & conversational steering</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Full post-call transcript & summary dispatch</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>Voice AI API</span>
+                <span>n8n</span>
+                <span>Claude Logic</span>
+                <span>Webhooks</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-card-action" onclick="openProjectModal('voice')">
+                  <span>View Architecture</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: AI Weather Report Automation -->
+          <article class="project-card anti-gravity-element" data-category="leadgen">
+            <div class="project-card-inner">
+              <div class="project-badge"><i class="fa-solid fa-cloud-sun-rain"></i> Predictive Automation</div>
+              <div class="project-number">06</div>
+              <h3 class="project-title">AI Weather Report Automation</h3>
+              <p class="project-tagline">Scheduled Weather Intelligence & Proactive Service Triggers</p>
+              <p class="project-description">
+                A scheduled automation system that pulls live meteorological data, synthesizes local impact reports using AI, and dispatches automated proactive weather advisory alerts (e.g. freeze warnings for plumbers or roof alerts for HVAC).
+              </p>
+
+              <div class="project-features">
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Scheduled cron execution with live weather APIs</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> AI synthesis of actionable homeowner tips</div>
+                <div class="feat-item"><i class="fa-solid fa-check"></i> Multi-channel broadcast via Email & WhatsApp</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>Weather API</span>
+                <span>n8n Cron</span>
+                <span>ChatGPT-4o</span>
+                <span>Gmail API</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-card-action" onclick="openProjectModal('weather')">
+                  <span>View Architecture</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATION & ABOUT SECTION -->
+    <section class="section cert-section" id="certification">
+      <div class="container">
+        <div class="cert-card-wrapper anti-gravity-element">
+          <div class="cert-grid">
+            <div class="cert-badge-col">
+              <div class="cert-shield-badge">
+                <div class="shield-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <span class="cert-issuer">IDEOVERSITY</span>
+                <span class="cert-location">Arfa Kareem Software Technology Park</span>
+              </div>
+            </div>
+
+            <div class="cert-content-col">
+              <div class="badge-tag">
+                <i class="fa-solid fa-graduation-cap"></i> Verified Credentials
+              </div>
+              <h2 class="cert-title">No-Code AI Tools Mastery</h2>
+              <div class="cert-meta">
+                <span><i class="fa-solid fa-building-columns"></i> IDEOVERSITY, Lahore</span>
+                <span><i class="fa-solid fa-location-dot"></i> Arfa Kareem Software Technology Park</span>
+                <span><i class="fa-solid fa-certificate"></i> Certified Graduate</span>
+              </div>
+              <p class="cert-desc">
+                Completed rigorous, hands-on industrial training in modern no-code and low-code AI workflow automation architecture. Mastered the end-to-end deployment of self-hosted workflows, API orchestration, vector databases, and enterprise AI agents.
+              </p>
+
+              <div class="about-highlight-box">
+                <div class="highlight-title"><i class="fa-solid fa-user-graduate"></i> Academic & Professional Background</div>
+                <p>
+                  As an ambitious <strong>BS AI Student</strong> with <strong>2+ months</strong> of laser-focused hands-on implementation experience in AI automation and workflow logic, I bridge the gap between academic artificial intelligence theory and practical, revenue-generating business automations.
+                </p>
+              </div>
+
+              <div class="cert-skills-tags">
+                <span>Workflow Orchestration</span>
+                <span>LLM Integration</span>
+                <span>API Automation</span>
+                <span>Prompt Architecture</span>
+                <span>Client Workflow Scoping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-tag">
+            <i class="fa-solid fa-paper-plane"></i> Let's Collaborate
+          </div>
+          <h2 class="section-title">Ready to Automate Your <span class="gradient-text">Business Workflows</span>?</h2>
+          <p class="section-subtitle">
+            Whether you are a home service contractor losing leads or a small business seeking operational freedom, let's connect.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Direct Info -->
+          <div class="contact-info-card anti-gravity-element">
+            <h3>Direct Contact & Channels</h3>
+            <p>Reach out directly for project inquiries, freelance automation consulting, or a workflow audit.</p>
+
+            <div class="contact-links-list">
+              <!-- Email Card -->
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-item-details">
+                  <span class="item-label">Primary Email</span>
+                  <a href="mailto:muhammadmuneeb8408@gmail.com" class="item-value">muhammadmuneeb8408@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copyEmailBtn" title="Copy Email Address" aria-label="Copy Email Address">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-item-details">
+                  <span class="item-label">GitHub Repository</span>
+                  <a href="https://github.com/muhammadmuneeb08-ctrl" target="_blank" rel="noopener noreferrer" class="item-value">github.com/muhammadmuneeb08-ctrl</a>
+                </div>
+                <a href="https://github.com/muhammadmuneeb08-ctrl" target="_blank" rel="noopener noreferrer" class="open-link-btn" title="Open GitHub" aria-label="Open GitHub">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="contact-item-details">
+                  <span class="item-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/muhammad-muneeb-b19a04413" target="_blank" rel="noopener noreferrer" class="item-value">linkedin.com/in/muhammad-muneeb</a>
+                </div>
+                <a href="https://www.linkedin.com/in/muhammad-muneeb-b19a04413" target="_blank" rel="noopener noreferrer" class="open-link-btn" title="Open LinkedIn" aria-label="Open LinkedIn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Guarantee Box -->
+            <div class="consultation-callout">
+              <div class="callout-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+              <div>
+                <strong>Guaranteed Fast Response</strong>
+                <p>All inquiries typically answered within 24 hours with an initial workflow assessment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Inquiry Form -->
+          <div class="contact-form-card anti-gravity-element">
+            <h3>Send a Message</h3>
+            <p>Tell me about your business bottleneck or desired AI workflow:</p>
+
+            <form id="contactForm" class="inquiry-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName"><i class="fa-regular fa-user"></i> Your Name *</label>
+                  <input type="text" id="userName" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="userEmail"><i class="fa-regular fa-envelope"></i> Email Address *</label>
+                  <input type="email" id="userEmail" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="businessType"><i class="fa-solid fa-building"></i> Business Type / Industry</label>
+                <select id="businessType" name="businessType">
+                  <option value="Home Services (Plumbing, HVAC, Electrical, Pest)">Home Services (Plumbing, HVAC, Electrical, Pest)</option>
+                  <option value="Small Business / E-Commerce">Small Business / E-Commerce</option>
+                  <option value="Agency / Professional Services">Agency / Professional Services</option>
+                  <option value="Other Industry">Other Industry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage"><i class="fa-regular fa-comment-dots"></i> What would you like to automate? *</label>
+                <textarea id="userMessage" name="message" rows="4" placeholder="E.g., I need an AI WhatsApp bot to answer customer calls and book appointments..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-lg btn-glow submit-btn" id="submitBtn">
+                <span>Send Inquiry</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="brand-logo">
+          <span class="logo-symbol">&lt;MM.ai&gt;</span>
+        </div>
+        <p class="footer-tagline">Muhammad Muneeb — AI Automation Engineer</p>
+      </div>
+
+      <div class="footer-center">
+        <p>&copy; <span id="currentYear">2026</span> Muhammad Muneeb. All rights reserved.</p>
+        <p class="footer-subtext">Built with modern semantic HTML5, high-performance CSS3, and modern UI/UX design.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/muhammadmuneeb08-ctrl" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-muneeb-b19a04413" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:muhammadmuneeb8408@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE ARCHITECTURE MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeProjectModal()" aria-label="Close dialog">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div id="modalBody">
+          <!-- Dynamically populated by script.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
